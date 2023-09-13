@@ -33,7 +33,7 @@ footer{
 
 @media screen and (max-width: 872px){
     section{
-        width: 400px;
+        width: 350px;
         transition-duration: 0.7s;
     }
 }

@@ -3,9 +3,13 @@ function carregar(){
     var img = window.document.getElementById('imagem')
     var data = new Date()
     var hora = data.getHours()
-    var min = data.getMinutes() 
+    var min = data.getMinutes()
     msg.innerHTML = `Agora são ${hora} horas.`
 
+        if (min < 10){
+            min = '0' + min
+        }
+    
         if (hora == 1){
             msg.innerHTML = `Agora são ${hora}:${min} Hora da manhã.`
             document.body.style.backgroundColor = '#ad8978'
@@ -25,6 +29,5 @@ function carregar(){
             img.src = 'imagens/noite.png'
             document.body.style.backgroundColor = '#4d3553'
         }
-            
-    
+         
 }

@@ -2,8 +2,7 @@ function carregar(){
     var msg = window.document.getElementById('msg')
     var img = window.document.getElementById('imagem')
     var data = new Date()
-    //var hora = data.getHours()
-    var hora = 
+    var hora = data.getHours()
     var min = data.getMinutes()
     msg.innerHTML = `Agora são ${hora} horas.`
 
@@ -16,8 +15,10 @@ function carregar(){
         }
     
         if (hora == 1){
+            document.getElementsByTagName('h1')[0].innerText = 'Hora da Noite'
             msg.innerHTML = `Agora são ${hora}:${min} Hora da madrugada.`
-            document.body.style.backgroundColor = '#ad8978'
+            img.src = 'imagens/madrugada.png'
+            document.body.style.backgroundColor = '#000128'
         } else if (hora >= 0 && hora < 6){
             //boa madrugada
             msg.innerHTML = `Agora são ${hora}:${min} Horas da madrugada.`

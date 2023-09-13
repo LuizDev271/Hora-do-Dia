@@ -23,7 +23,7 @@ function carregar(){
             msg.innerHTML = `Agora são ${hora}:${min} Horas da tarde.`
             img.src = 'imagens/tarde.png'
             document.body.style.backgroundColor = '#ed9748'
-        }  else if (hora > 18){
+        }  else if (hora >= 18){
             //boa noite
             msg.innerHTML = `Agora são ${hora}:${min} Horas da noite.`
             img.src = 'imagens/noite.png'
